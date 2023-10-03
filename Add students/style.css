@@ -1,0 +1,35 @@
+.container{
+    margin: 60px auto;
+    border: none;
+    text-align: center;
+    width: 400px;
+}
+
+.flex{
+    display: flex;
+    gap: 20px;
+}
+input{
+    border: 1px solid lightgray;
+    font-size: 16px;
+    padding: 14px;
+    width: 50%;
+    border-radius: 12px;
+    box-sizing: border-box;
+    
+}
+input:focus{
+    outline: none;
+    border: 1px solid royalblue;
+}
+.btn{
+    
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
