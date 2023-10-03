@@ -1,6 +1,6 @@
 
 
-let apiKey = "http://www.omdbapi.com/?apikey=61e576a4&t=dangal"
+let apiKey = "http://www.omdbapi.com/?apikey=61e576a4&t="
 
 let title = document.getElementById("title")
 let date = document.getElementById("date")
