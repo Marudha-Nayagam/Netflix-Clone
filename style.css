@@ -1,0 +1,217 @@
+.main-body{
+    width: 100%;
+}
+
+.card1{
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline ;
+}
+
+.bg-img{
+    width: 100%; 
+    border: none;
+    height: 800px;
+} 
+.nav{
+    position: absolute;
+    top: 0; 
+    width: 100%;
+    margin: 40px;
+    display: flex;
+    justify-content:space-between;
+    
+    
+}
+.nav-rtl{
+    display: flex;
+    margin-right:   200px;
+    gap: 20px;
+    
+}
+.lang{
+    border:1px solid gray;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    padding: 0 7px
+    
+}
+.icon{
+    margin-left: 150px;
+}
+.web-icon, .option {
+    border: none;
+    color: white;
+    background-color:black;
+    margin-top: 5px;
+}
+.btn-signin{
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 7px 18px;
+    background-color: red;
+    color:white ;
+}
+
+.content-center{
+   width: 100%;
+   position: absolute;
+   top:40%;
+   left: 50%;
+   transform: translate(-50%, -10%);
+   text-align: center;
+   color: white;
+}
+.card1-heading{
+    
+    font-size: 50px;
+    margin: 0;
+}
+.card1-text1{
+   
+    font-size: 25px;
+}
+.card1-text2{
+    font-size: 20px;
+}
+.search-bar{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 8px;
+}
+.email {
+    background-color: rgb(31, 30, 30);
+    width: 330px;
+    color: white;
+    padding: 15px;
+    border-radius: 7px;
+
+    
+    
+}
+.email::placeholder{
+    color: white;
+}
+.start{
+        background-color: red;
+        border-radius: 7px;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 13px 25px;
+        border: none;
+}
+
+.story-card{
+    background-color: black;
+    width: 100%;
+    height: 500px;
+    display: flex;
+   border-bottom:5px solid gray;
+}
+
+.card2-content{
+    width: 50%;
+    color: white;
+    margin-top: 180px;
+    padding-left: 150px;
+    
+}
+.card2-img-content{
+  
+   width: 50%;
+   object-fit:cover;
+}
+.img{
+    margin: 100px 0 0 75px;
+    background-color: black;
+    object-fit: cover;
+}
+
+.card-content{
+    width: 50%;
+    color: white;
+    margin-top: 150px;
+    padding-right:100px;
+    
+}
+.card-img-content{
+   padding-left: 100px ;
+   width: 50%;
+   object-fit: contain;
+}
+.img{
+    margin: 100px 0 0 75px;
+    background-color: black;
+    object-fit: contain;
+}
+
+.faq-box{
+    text-align: center;
+    background-color: black;
+    padding-bottom: 100px;
+    border-bottom: 5px solid gray;
+}
+.faq {
+    width: 70%;
+    display: flex;
+    border: none;
+    background-color: rgb(59, 58, 58);
+    color: white;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: baseline;
+    margin: 15px;
+    margin-left: 15%;
+   
+}
+
+.faq:hover{
+    background-color: rgb(26, 25, 25);
+}
+.faq-heading{
+    font-weight: bolder;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.footer-text{
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+
+}
+
+.link-box{
+ width: 100%;
+ background-color: black;  
+ color: white; 
+ display: flex;
+ padding: 50px 100px;
+ justify-content: space-evenly;
+}
+.link-box1{
+    width:35%;
+}
+.link-box2{
+    width:35% ;
+}
+.link-box3{
+    width: 30%;
+}
+
+.footer-btn{
+    width: 130px;
+}
+
+
+a {
+    color:lightgray;
+}
+

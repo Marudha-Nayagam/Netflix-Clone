@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Assignment 1 
+        //Write a JavaScript function that takes a number as a parameter and   prints whether it's positive, negative, or zero.
+         
+        function isNumber( n ){
+            if( n>0 ){
+                console.log("positive")
+            }else if ( n==0 ){
+                console.log("zero")
+            }else{
+                console.log("negative")
+            }
+        }
+        isNumber( 0 ) // o/p => zero
+        isNumber( 25 ) // o/p => positive
+        isNumber( -52 )// o/p => negative
+
+        //Assignment 2:
+        // Write a JavaScript function that takes a positive integer as a parameter and calculates its factorial using a for loop. The factorial of a number N is the product of all positive integers less than or equal to N.
+
+
+        function factor( num ){
+            let total = 1;
+            for( let i=1; i<=num; i++){
+                total *= i;
+            }
+            console.log(total)
+        }
+        factor( 5 ) //output => 120
+
+        //Assignment 3:
+        // Write a JavaScript function that takes two numbers as parameters and returns the larger one.
+
+        function maxNumber( n1, n2 ) {
+            // Math method **
+            //  let max =  Math.max( n1, n2 )   
+            // console.log(max)
+            if(n1 > n2){
+                console.log(n1)
+            }else{
+                console.log(n2)
+            }
+        }
+        maxNumber( 52,71 ) // o/p => 71 
+    
+        
+        // Assignment 4:
+        // Write a JavaScript function that takes a string as a parameter and determines whether it's a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).
+
+        function palindrome( str ) {
+            let revStr = ""
+            for( let i=str.length-1; i>=0; i--){
+                revStr += str[i]
+            }
+                if( str == revStr ){
+                    console.log("it's a palindrome.")
+                }else{
+                    console.log("it's not a palindrome.")
+                }
+
+            // let rev = str.split("").reverse().join("")
+            //      if( str == rev ){
+            //          console.log("it's a palindrome.")
+            //      }else{
+            //          console.log("it's not a palindrome.")
+            //      }
+            
+            
+        }
+        palindrome( "level" ) // o/p=>it's a palindrome.
+        palindrome( "codekaro" )//o/p => it's not a palindrome.
+        
+        //Assignment 5:
+        //Write a JavaScript function that takes a positive integer as a parameter and prints all the prime numbers less than or equal to that integer. A prime number is a natural number greater than 1 that is not a product of two smaller natural numbers.
+
+        function printPrimeNumbers( num ){
+            let i;
+            let j;
+            for( i=2; i<=num; i++){
+                for ( j=2; j<i; j++ ){
+                    if( i%j == 0 ){
+                        break;
+                    }
+                }
+                if( i == j){
+                    console.log(i)
+                }
+
+            }
+        }
+        printPrimeNumbers( 10 ) // o/p ==> 2 3 5 7
+
+
+        //Assignment 6:
+        //Write a JavaScript function that simulates a simple calculator. The function should take two numbers and an operator (+, -, *, or /) as parameters and perform the corresponding operation.
+
+        function calculator( number1, number2, operator){
+            
+            let result;
+            if( operator == '+'){
+                result = number1 + number2
+            }else if ( operator == '-'){
+                result = number1 - number2
+            }else if ( operator == '*'){
+                result = number1 * number2
+            }else{
+                result = number1 / number2
+            }
+            console.log(result)
+        }
+        calculator(5,2, '+') // o/p 7
+        calculator(5,2, '-') // o/p  3
+        calculator(5,2, '*')  // o/p 10
+        calculator(5,2, '/') // o/p 2.5
+
+        //Assignment 7:
+        //Write a JavaScript function that takes a string as a parameter and counts the number of vowels (a, e, i, o, u) in the string.
+
+        function vowelCount(str){
+             let vowel_list = 'aeiouAEIOU';
+             let count = 0;
+  
+             for(let i = 0; i< str.length ; i++){
+                if (vowel_list.indexOf(str[i]) !== -1){
+                     count += 1;
+                }
+  
+            }
+            console.log( "The vowel count is: " +  count)
+        }
+        vowelCount("codekaro") // o/p  he vowel count is: 4
+        vowelCount("marudha nayagam") // o/p The vowel count is: 6
+
+        //Assignment 8:
+        //Write a JavaScript function that takes a positive integer as a parameter and checks if it's a perfect number. A perfect number is a positive integer that is equal to the sum of its proper divisors, excluding itself.
+
+        function perfectNumber( num ){
+            let result = 0
+            for( let i=0; i<=num/2; i++){
+                if( num % i == 0){
+                    result += i
+                }
+            }
+            if( result === num && result !==0 ){
+                console.log("it's a perfect number")
+            }else{
+                console.log("it's not a perfect number")
+            }
+        }
+        perfectNumber(28) // o/p it's a perfect number
+        perfectNumber(14) // o/p it's not a perfect number
+       
+        
+        //Assignment 9:
+        //Write a JavaScript function that takes a number as a parameter and prints the Fibonacci series up to that number. The Fibonacci series is a sequence of numbers in which each number is the sum of the two preceding ones.
+ 
+        function fibonacciSeries(num){
+            let n1=0
+            let n2= 1
+            let nextTerm;
+            for( let i=1; i<=num; i++ ){
+                
+                nextTerm = n1 + n2 
+                n1 = n2
+                n2 = nextTerm
+            }
+            console.log(n1)
+        }
+        fibonacciSeries(9) // 34 (1 1 2 3 5 8 13 21 34)
+
+
+        
+        //Assignment 10:
+        //Write a JavaScript function that takes a positive integer as a parameter and prints its multiplication table up to 10.
+
+        function table(num) {
+            for ( let i=1; i<11; i++){
+                let table = num*i
+                console.log( i+ " * "+num+ " = " + table)
+            }
+        }
+        table(9)
+
+ 
+
+
+
+
+
+
+        
+
+
+        
+
+
+    </script>
+</body>
+</html>

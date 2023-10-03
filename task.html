@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <script>
+        //  Assignmen 1 Array operations
+
+        let array = []
+        array.push("apple", "banana", "orange")
+        console.log(array)
+        array.splice(0,1)
+        console.log(array)
+        array.push("grape")
+        console.log(array)
+        array.splice(1,0,"pear")
+        console.log(array) //  output ==> (4) ['banana', 'pear', 'orange', 'grape']
+
+        // Assignmen 1 Object operations
+
+        let person = {}
+        person.name = "John"
+        person.age = 30
+        person.city = "New York"
+        console.log(person)
+
+        delete person.age
+        console.log(person)
+
+        person.job = "Engineer"
+        console.log(person)
+
+        person.city = "San Francisco"
+        console.log(person) // output ==>{name: 'John', city: 'San Francisco', job: 'Engineer'}
+  
+
+        // Assignment 3 array of Objects
+
+        let cars = []
+        cars.make = "Toyota"
+        cars.model = "Camry"
+        cars.year = 2018
+        console.log(cars)
+
+        delete cars.make
+        console.log(cars)// output ==> [model: 'Camry', year: 2018]
+        
+        cars.make = "Honda"
+        cars.model = 'Civic'
+        cars.year = 2020
+        console.log(cars)
+
+        cars.model = "Accord"
+        console.log(cars)// output ==> [model: 'Accord', year: 2020, make: 'Honda']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
